@@ -1,0 +1,61 @@
+{
+    "name": "plantuml-proxy-cli",
+    "version": "1.0.0",
+    "description": "Render local PlantUML files to images using the online PlantUML service.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vectronic/plantuml-proxy-cli"
+    },
+    "homepage": "https://github.com/vectronic/plantuml-proxy-cli",
+    "bugs": {
+        "url": "https://github.com/vectronic/plantuml-proxy-cli/issues"
+    },
+    "keywords": [
+        "plantuml",
+        "proxy"
+    ],
+    "contributors": [
+        {
+            "name": "Vectronic",
+            "email": "hello.vectronic@gmail.com",
+            "url": "https://vectronic.io"
+        }
+    ],
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "type": "module",
+    "files": [
+        "dist/**/*"
+    ],
+    "scripts": {
+        "prebuild": "npx rimraf dist",
+        "build": "npx rollup -c"
+    },
+    "engines": {
+        "node": "12+"
+    },
+    "bin": {
+        "js-example-cli": "./bin/js-example-cli"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "8.3.5",
+        "@commitlint/config-conventional": "8.3.4",
+        "husky": "4.2.5",
+        "rimraf": "3.0.2",
+        "rollup": "2.12.0",
+        "rollup-plugin-cleanup": "3.1.1",
+        "rollup-plugin-commonjs": "10.1.0",
+        "rollup-plugin-json": "4.0.0",
+        "rollup-plugin-node-resolve": "5.2.0",
+        "rollup-plugin-peer-deps-external": "2.2.2",
+        "rollup-plugin-terser": "6.1.0"
+    },
+    "dependencies": {
+        "@flowscripter/cli-framework": "5.4.5",
+        "debug": "4.1.1",
+        "needle": "2.5.0",
+        "pako": "1.0.11"
+    }
+}
