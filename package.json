@@ -1,6 +1,6 @@
 {
     "name": "plantuml-proxy-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Render local PlantUML files to images using the online PlantUML service.",
     "repository": {
         "type": "git",
@@ -34,10 +34,10 @@
         "build": "npx rollup -c"
     },
     "engines": {
-        "node": "12+"
+        "node": ">=12"
     },
     "bin": {
-        "js-example-cli": "./bin/js-example-cli"
+        "plantrender": "./bin/plantrender"
     },
     "devDependencies": {
         "@commitlint/cli": "8.3.5",
