@@ -66,13 +66,13 @@ Other Arguments
 
 ## Git Hook
 
-An example Git hook defined in a [Husky](https://github.com/typicode/husky) config file using all of the command
+An example Git hook defined in a [Husky](https://github.com/typicode/husky) config file using command
 argument defaults would be:
 
 ```
 {
     "hooks": {
-        "pre-commit": "npx plantrender"
+        "pre-commit": "npx plantrender --sourceFolder=uml/source --destFolder=docs/images"
     }
 }
 ```
@@ -82,7 +82,7 @@ Otherwise, get funky with the options:
 ```
 {
     "hooks": {
-        "pre-commit": "npx plantrender sourceFolder=uml/source destFolder=docs/images sourceExt=uml destFormat=txt"
+        "pre-commit": "npx plantrender --sourceFolder=uml/source --destFolder=docs/images --sourceExt=uml --destFormat=txt"
     }
 }
 ```
