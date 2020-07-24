@@ -37,7 +37,7 @@ npm install plantuml-proxy-cli
 ```
 Render local PlantUML files to images using the online PlantUML service.
 
-  version                 1.0.4
+  version                 1.0.5
 
 Usage
 

@@ -11,4 +11,4 @@ self=$(
     pwd -P
 )
 
-NODE_NO_WARNINGS=1 node --experimental-modules $self/../dist/node.js "$@"
+NODE_NO_WARNINGS=1 node --experimental-modules "$self"/../dist/node.js "$@"
