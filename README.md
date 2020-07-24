@@ -1,6 +1,6 @@
 # plantuml-proxy-cli
 [![license](https://img.shields.io/github/license/vectronic/plantuml-proxy-cli.svg)](https://github.com/vectronic/plantuml-proxy-cli/blob/master/LICENSE)
-[![npm](https://img.shields.io/npm/v/vectronic/plantuml-proxy-cli.svg)](https://www.npmjs.com/package/vectronic/plantuml-proxy-cli)
+[![npm](https://img.shields.io/npm/v/plantuml-proxy-cli.svg)](https://www.npmjs.com/package/plantuml-proxy-cli)
 
 > Simple NodeJS CLI to render local PlantUML files to images using the online PlantUML service.
 
@@ -37,7 +37,7 @@ npm install plantuml-proxy-cli
 ```
 Render local PlantUML files to images using the online PlantUML service.
 
-  version                 1.0.0
+  version                 1.0.3
 
 Usage
 
@@ -72,17 +72,17 @@ argument defaults would be:
 ```
 {
     "hooks": {
-        "pre-commit": "npx plantrender --sourceFolder=uml/source --destFolder=docs/images"
+        "pre-commit": "npx plantrender --sourceFolder=uml/source --destFolder=docs/images && git add docs/images/*.png"
     }
 }
 ```
 
-Otherwise, get funky with the options:
+Otherwise, get funky with the other options:
 
 ```
 {
     "hooks": {
-        "pre-commit": "npx plantrender --sourceFolder=uml/source --destFolder=docs/images --sourceExt=uml --destFormat=txt"
+        "pre-commit": "npx plantrender --sourceFolder=uml/source --destFolder=docs/images --sourceExt=uml --destFormat=txt && git add docs/images/*.png"
     }
 }
 ```
